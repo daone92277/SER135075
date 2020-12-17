@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7;" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Broadridge Financial Solutions</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/nucleo-glyph.css" rel="stylesheet" media="screen">
+    <link href="css/nucleo-mini.css" rel="stylesheet" media="screen">
+    <link href="css/nucleo-outline.css" rel="stylesheet" media="screen">
+    <link href="css/bundle.css" rel="stylesheet" media="screen">
+    <link href="css/dataTables.bootstrap4.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <aside class="mdc-drawer mdc-drawer--dismissible mdc-top-app-bar--fixed-adjust">
+        <div class="mdc-drawer__content">
+            <div class="mdc-list">
+                <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+                    <span class="mdc-list-item__text">Inbox</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+                    <span class="mdc-list-item__text">Outgoing</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
+                    <span class="mdc-list-item__text">Drafts</span>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+        <main class="main-content" id="main-content">
+
+            <!-- header start -->
+            <div class="container white_bg no_padding">
+                <div id="header">
+                    <div class="white_bg no-padding">
+                        <nav class="navbar navbar-default custom_nav">
+                            <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div>
+                                    <ul class="nav navbar-nav navbar-left logo-nav">
+                                        <li>
+                                            <a class="navbar-brand" href="#">
+                                                <img alt="Broadridge Financial Solutions Inc." src="images/logo.png" class="logo left">
+                                            </a>
+                                            <span class="logo_text">Broadridge Financial Solutions</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div id="header-util-nav" class="collapse navbar-collapse first-collapse">
+                                    <ul role="navigation" class="nav yamm navbar-nav navbar-right utility_nav">
+                                        <li class="dropdown">
+                                            <a href="#" class="icon-dis dropDownNav dropdown-toggle" data-toggle="dropdown" role="button">
+                                                <i class="nc-icon-glyph ui-3_alert" title="Notifications"></i>
+                                                <span _ngcontent-c0="" class="mat-badge mat-badge-warn mat-badge-above mat-badge-after mat-badge-medium ng-star-inserted" matbadgecolor="warn" matbadgeoverlap="false">
+                                                    <span id="mat-badge-content-1" class="mat-badge-content mat-badge-active">3</span>
+                                                </span>
+                                                <span class="no-display">Notifications</span>
+                                            </a>
+                                            <ul class="dropdown-menu notify-drop sec-menu">
+                                                <div class="notify-drop-title">
+                                                    <div class="row">
+                                                        <div class="col-md-8 col-sm-8 col-xs-8"><i class="nc-icon-glyph ui-3_alert"></i><span>Alert(s):</span></div>
+                                                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#"><span class="clear-all">Clear All</span></a></div>
+                                                    </div>
+                                                </div>
+                                                <!-- end notify title -->
+                                                <!-- notify content -->
+                                                <div class="drop-content">
+                                                    <li>
+                                                        <div class="col-md-11 col-sm-10 col-xs-10"><a href="#">Mark Hamill has unallocated hours in resource plan</a>
+                                                        <!-- <hr> -->
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-2 col-xs-2">
+                                                            <a href="#" class="cleared"><i class="nc-icon-glyph ui-1_bold-remove"></i></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-md-11 col-sm-10 col-xs-10"><a href="#">PR complete within 25 business days</a>
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-2 col-xs-2">
+                                                            <a href="#" class="cleared"><i class="nc-icon-glyph ui-1_bold-remove"></i></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-md-11 col-sm-10 col-xs-10"><a href="#">Lite:ICS-PSIK-SER-12345-DevOps is over 200 hours and requires</a>
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-2 col-xs-2">
+                                                            <a href="#" class="cleared"><i class="nc-icon-glyph ui-1_bold-remove"></i></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-md-11 col-sm-10 col-xs-10"><a href="#">Mark Hamill has unallocated hours in resource plan</a>
+                                                        <!-- <hr> -->
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-2 col-xs-2">
+                                                            <a href="#" class="cleared"><i class="nc-icon-glyph ui-1_bold-remove"></i></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-md-11 col-sm-10 col-xs-10"><a href="#">PR complete within 25 business days</a>
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-2 col-xs-2">
+                                                            <a href="#" class="cleared"><i class="nc-icon-glyph ui-1_bold-remove"></i></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-md-11 col-sm-10 col-xs-10"><a href="#">Lite:ICS-PSIK-SER-12345-DevOps is over 200 hours and requires</a>
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-2 col-xs-2">
+                                                            <a href="#" class="cleared"><i class="nc-icon-glyph ui-1_bold-remove"></i></a>
+                                                        </div>
+                                                    </li>
+                                                </div>
+                                            </ul>
+                                            
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="icon-dis">
+                                                <i class="nc-icon-glyph ui-3_phone" title="Contacts"></i>
+                                                <span class="no-display">Contacts</span>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropDownNav dropdown-toggle" data-toggle="dropdown" role="button">
+                                                <span class="heromask utility-text">JD</span><span class="caret"></span>
+                                            </a>
+                                            <ul aria-labelledby="dropdownMenu" role="menu" class="dropdown-menu multi-level sub-menu">
+                                                <li>
+                                                    <a href="#">
+                                                        Submenu Item 1
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Submenu Item 2
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown block">
+                                            <a href="#">
+                                                <span class="icn-bdr utility-text"><i class="nc-icon-glyph media-1_button-power" title="Logout"></i>Logout</span>
+                                            </a>
+                                        </li>
+                                      </ul>
+                                </div><!-- /.navbar-collapse -->
+                            </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- header end -->
+
+            <!-- Primary Navigation start -->
+            <div class="container-fluid br_blue_background no_padding">
+                <div class="container no_padding">
+                    <div class="navbar navbar-inverse">
+                        <div class="navbar-inner">
+                            <div>
+                                <div class="navbar-header">
+                                    <button data-target=".primary_nav" data-toggle="collapse" class="navbar-toggle second-bar" type="button">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="no-display">Navbar Collapse</span>
+                                    </button>
+                                    <a href="#">
+                                        <span class="icn-bdr-2 utility-text"><i class="nc-icon-glyph media-1_button-power white-btn" title="Logout"></i>Logout</span>
+                                    </a>
+                                </div>
+                                <div class="navbar-collapse collapse primary_nav">
+                                    <!-- primary nav list items start-->
+                                    <ul class="nav navbar-nav white-nav navbar-nav-2" role="navigation">
+                                        <!-- <li>
+                                            <a href="#" class="dash">
+                                                <i class="nc-icon-glyph ui-1_home-simple" title="Dashoard"></i>
+                                                <span class="no-display">Dashboard</span>
+                                            </a>
+                                        </li> -->
+                                        <li>
+                                            <a href="#">
+                                                Dashboard
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Menu Item 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Menu Item 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Menu Item 3
+                                            </a>
+                                        </li>
+                                        <li class="dropdown" id="dropdownMenu">
+                                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" role="button">
+                                                Menu Item 4<span class="caret"></span>
+                                            </a>
+                                            <ul aria-labelledby="dropdownMenu" role="menu" class="dropdown-menu multi-level">
+                                                <li>
+                                                    <a href="#">
+                                                        Submenu Item 1
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Submenu Item 2
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Submenu Item 3
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Submenu Item 4
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <!-- primary nav list items end-->
+
+                                    <!-- search form start-->
+                                    <div class="navbar-form navbar-right" role="search">
+                                        <div data-intro="Quick Search" data-step="6" class="input-group">
+                                            <label class="control-label no-display" for="search">Search</label>
+                                            <input type="text" class="form-control" placeholder="Search for..." title="search" id="search">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-primary search-btn" type="button" title="search"><i aria-hidden="true" class="nc-icon-glyph ui-1_zoom" title="search-icon"></i><span class="no-display">Search</span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- search form end-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Primary Navigation end -->
+
+            <!-- Container start -->
+            <div class="container white_bg body_min_height material-content">
+                <div class="row">
+                    <div class="PageTitle">Dashboard</div>
+                </div>
+
+                <!-- Flyouts -->
+                <div class="row">
+                    <div class="scrollspy-item">
+                        <div class="scrollspy-content">
+                            <div class="row">
+                                <div class="col-md-12 mb-5"><h5>Flytouts</h5></div>
+                                <div class="col-md-12 position-relative">
+                                    <header class="mdc-top-app-bar app-bar" id="app-bar">
+                                        <div class="mdc-top-app-bar__row">
+                                            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                                                <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+                                                <span class="mdc-top-app-bar__title">Click icon to open fly out</span>
+                                            </section>
+                                        </div>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Primary Buttons & Secondary Buttons -->
+                <div class="row">
+                    <div class="scrollspy-item">
+                        <div class="scrollspy-content">
+                            <div class="row">
+                                <!-- Primary & Secondary Buttons -->
+                                <div class="col-md-12 mb-5">
+                                    <h5>Primary Buttons & Secondary Buttons</h5>
+                                    <button class="mdc-button mdc-button--raised mx-lg-3 mdc-button-primary mdc-ripple-upgraded"> 
+                                        <span class="mdc-button__ripple"></span>Primary
+                                    </button>
+                                    <button class="mdc-button mdc-button--raised mx-lg-3 mdc-button-primary active mdc-ripple-upgraded"> 
+                                        <span class="mdc-button__ripple"></span>Primary Hovered/Active
+                                    </button>
+
+                                    <button class="mdc-button mdc-button--raised mx-lg-3 mdc-button-secondary">
+                                        <span class="mdc-button__ripple"></span>Secondary
+                                    </button>
+                                    <button class="mdc-button mdc-button--raised mx-lg-3 mdc-button-secondary active">
+                                        <span class="mdc-button__ripple"></span>Secondary Hovered/Active
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Radio Buttons -->
+                <div class="row">
+                    <div class="scrollspy-item">
+                        <div class="scrollspy-content">
+                            <div class="row">
+                                <div class="col-md-4 md-radio">
+                                    <label class="d-block">Field Name 1</label>
+                                    <div class="mdc-form-field">
+                                        <div class="mdc-radio">
+                                            <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+                                            <div class="mdc-radio__background">
+                                                <div class="mdc-radio__outer-circle"></div>
+                                                <div class="mdc-radio__inner-circle"></div>
+                                            </div>
+                                            <div class="mdc-radio__ripple"></div>
+                                        </div>
+                                        <label for="radio-1">Option 1</label>
+                                    </div>
+                                    <div class="mdc-form-field">
+                                        <div class="mdc-radio">
+                                            <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios">
+                                            <div class="mdc-radio__background">
+                                                <div class="mdc-radio__outer-circle"></div>
+                                                <div class="mdc-radio__inner-circle"></div>
+                                            </div>
+                                            <div class="mdc-radio__ripple"></div>
+                                        </div>
+                                        <label for="radio-2">Option 2</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tooltips -->
+                <div class="row">
+                    <div class="scrollspy-item">
+                        <div class="scrollspy-content">
+                            <div class="row">
+                                <div class="col-md-12 mb-5">
+                                    <h5>Tooltips</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    Tooltip on top
+                                    </button>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                                    Tooltip on right
+                                    </button>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                    Tooltip on bottom
+                                    </button>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                                    Tooltip on left
+                                    </button>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                                    Tooltip with HTML
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modals -->
+                <div class="row">
+                    <div class="scrollspy-item">
+                        <div class="scrollspy-content">
+                            <div class="row">
+                                <div class="col-md-12 mb-5">
+                                    <h5>Modals</h5>
+                                    <button class="mdc-button mdc-button--raised mx-lg-3 mdc-button-primary" data-toggle="modal" data-target="#myModal"> 
+                                        <span class="mdc-button__ripple"></span>Small Modal
+                                    </button>
+                                    <button class="mdc-button mdc-button--raised mx-lg-3 mdc-button-primary" data-toggle="modal" data-target="#mymodal-x-lg"> 
+                                        <span class="mdc-button__ripple"></span>Regular Modal
+                                    </button>
+                                    <button class="mdc-button mdc-button--raised mx-lg-3 mdc-button-primary" data-toggle="modal" data-target="#mymodal-lg"> 
+                                        <span class="mdc-button__ripple"></span>Large Modal
+                                    </button>
+                                </div>
+                            </div>
+            
+                            <div class="modal fade" tabindex="-1" role="dialog" id="myModal" aria-label="mySmallModalLabel">
+                                <div class="modal-dialog modal-sm" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header modal-header-bg d-flex justify-content-between">
+                                            <h5 class="modal-title">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="small-modal"><span
+                                                    class="nc-icon-glyph ui-1_simple-remove"></span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Modal body text goes here.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="mdc-button mdc-button--raised mx-lg-3 mdc-button-secondary" data-dismiss="modal">
+                                                <span class="mdc-button__ripple"></span>Cancel
+                                            </button>
+                                           
+                                            <button class="mdc-button mdc-button--raised mx-lg-3 mdc-button-primary"> 
+                                                <span class="mdc-button__ripple"></span>Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="modal fade " id="mymodal-lg" tabindex="-1" role="dialog" aria-label="myLargeModalLabel">
+                               <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header modal-header-bg d-flex justify-content-between">
+                                            <h4 class="modal-title">Modal Title</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="medium-modal"><span
+                                                    class="nc-icon-glyph ui-1_simple-remove"></span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Modal body text goes here.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="mdc-button mdc-button--raised mx-lg-3 mdc-button-secondary" data-dismiss="modal">
+                                                <span class="mdc-button__ripple"></span>Cancel
+                                            </button>
+                                            <button class="mdc-button mdc-button--raised mx-lg-3 mdc-button-primary"> 
+                                                <span class="mdc-button__ripple"></span>Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                            </div>
+                        
+                            <div class="modal fade" id="mymodal-x-lg" tabindex="-1" role="dialog" aria-label="myXLargeModalLabel">
+                                <div class="modal-dialog modal-xl" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header modal-header-bg d-flex justify-content-between">
+                                            <h4 class="modal-title">Modal Title</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="xl-modal"><span
+                                                   class="nc-icon-glyph ui-1_simple-remove"></span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Modal body text goes here.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="mdc-button mdc-button--raised mx-lg-3 mdc-button-secondary" data-dismiss="modal">
+                                                <span class="mdc-button__ripple"></span>Cancel
+                                            </button>
+                                            <button class="mdc-button mdc-button--raised mx-lg-3 mdc-button-primary"> 
+                                                <span class="mdc-button__ripple"></span>Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabs -->
+                <div class="row">
+                    <div class="scrollspy-item">
+                        <div class="scrollspy-content">
+                            <div class="row">
+                                <div class="col-md-12"><h5>Tabs</h5></div>
+                                <!--Bootstrap Tabs -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="nav nav-tabs br-round-tabs">
+                                            <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home2">Home</a> </li>
+                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#menu12">Menu 1</a> </li>
+                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#menu22">Menu 2</a> </li>
+                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#menu32">Menu 3</a> </li>
+                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#menu42">Menu 4</a> </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane container active" id="home2">Home content</div>
+                                            <div class="tab-pane container fade" id="menu12">Menu 1 Content</div>
+                                            <div class="tab-pane container fade" id="menu22">Menu 2 Content</div>
+                                            <div class="tab-pane container fade" id="menu32">Menu 3 Content</div>
+                                            <div class="tab-pane container fade" id="menu42">Menu 4 Content</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <ul class="nav nav-tabs br-solid-tabs">
+                                            <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home">Home</a> </li>
+                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a> </li>
+                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a> </li>
+                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#menu3">Menu 3</a> </li>
+                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#menu4">Menu 4</a> </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane container active" id="home">Home Content</div>
+                                            <div class="tab-pane container fade" id="menu1">Menu 1 Content</div>
+                                            <div class="tab-pane container fade" id="menu2">Menu 2 Content</div>
+                                            <div class="tab-pane container fade" id="menu3">Menu 3 Content</div>
+                                            <div class="tab-pane container fade" id="menu4">Menu 4 Content</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Material Tabs -->    
+                                <div class="mdc-tabs-selector" role="tablist">
+                                    <div class="mdc-tab-scroller">
+                                        <div class="mdc-tab-scroller__scroll-area">
+                                            <div class="mdc-tab-scroller__scroll-content">
+                                                <ul class="nav nav-tabs w-100 flex-nowrap">
+                                                    <li class="w-100">
+                                                        <a class="mdc-tab mdc-tab--active mdc-link" role="tab" aria-selected="true" data-toggle="tab"
+                                                            href="#original-tab-one">
+                                                            <span class="mdc-tab__content">
+                                                                <span class="mdc-tab__text-label">Item One</span>
+                                                            </span>
+                                                            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                                                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                                            </span>
+                                                            <span class="mdc-tab__ripple"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="w-100">
+                                                        <a class="mdc-tab mdc-link" role="tab" aria-selected="true" data-toggle="tab"
+                                                            href="#original-tab-two">
+                                                            <span class="mdc-tab__content">
+                                                                <span class="mdc-tab__text-label">Item Two</span>
+                                                            </span>
+                                                            <span class="mdc-tab-indicator">
+                                                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                                            </span>
+                                                            <span class="mdc-tab__ripple"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="w-100">
+                                                        <a class="mdc-tab mdc-link" role="tab" aria-selected="true" data-toggle="tab"
+                                                            href="#original-tab-three">
+                                                            <span class="mdc-tab__content">
+                                                                <span class="mdc-tab__text-label">Item Three</span>
+                                                            </span>
+                                                            <span class="mdc-tab-indicator">
+                                                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                                            </span>
+                                                            <span class="mdc-tab__ripple"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="w-100">
+                                                        <a class="mdc-tab mdc-link" role="tab" aria-selected="true" data-toggle="tab"
+                                                            href="#original-tab-four">
+                                                            <span class="mdc-tab__content">
+                                                                <span class="mdc-tab__text-label">Item Four</span>
+                                                            </span>
+                                                            <span class="mdc-tab-indicator">
+                                                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                                            </span>
+                                                            <span class="mdc-tab__ripple"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="w-100">
+                                                        <a class="mdc-tab mdc-link" role="tab" aria-selected="true" data-toggle="tab"
+                                                            href="#original-tab-five">
+                                                            <span class="mdc-tab__content">
+                                                                <span class="mdc-tab__text-label">Item Five</span>
+                                                            </span>
+                                                            <span class="mdc-tab-indicator">
+                                                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                                            </span>
+                                                            <span class="mdc-tab__ripple"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="original-tab-one" class="container tab-pane active">
+                                        Item One Content
+                                    </div>
+                                    <div id="original-tab-two" class="container tab-pane fade">
+                                        Item Two Content
+                                    </div>
+                                    <div id="original-tab-three" class="container tab-pane fade">
+                                        Item Three Content
+                                    </div>
+                                    <div id="original-tab-four" class="container tab-pane fade">
+                                        Item Four Content
+                                    </div>
+                                    <div id="original-tab-five" class="container tab-pane fade">
+                                        Item Five Content
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Fields -->
+                <div class="row">
+                    <div class="scrollspy-item">
+                        <div class="scrollspy-content">
+                            <div class="row">
+                                <div class="col-md-12"><h5>Text Fields</h5></div>
+                                <div class="col-md-4">
+                                    <div class="mdc-text-field mdc-text-field--outlined">
+                                        <input type="text" class="mdc-text-field__input">
+                                        <div class="mdc-notched-outline">
+                                            <div class="mdc-notched-outline__leading"></div>
+                                            <div class="mdc-notched-outline__notch">
+                                                <label for="tf-outlined" class="mdc-floating-label">First Name</label>
+                                            </div>
+                                            <div class="mdc-notched-outline__trailing"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mdc-text-field mdc-text-field--outlined">
+                                        <input type="text" class="mdc-text-field__input">
+                                        <div class="mdc-notched-outline">
+                                            <div class="mdc-notched-outline__leading"></div>
+                                            <div class="mdc-notched-outline__notch">
+                                                <label for="tf-outlined" class="mdc-floating-label">Last Name</label>
+                                            </div>
+                                            <div class="mdc-notched-outline__trailing"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Date Picker -->
+                <div class="row">
+                    <div class="scrollspy-item">
+                        <div class="scrollspy-content">
+                            <div class="row">
+                                <div class="col-md-12"><h5>Date Picker</h5></div>
+                                <div class="col-md-4">
+                                    <div class="mdc-text-field mdc-text-field--outlined mdc-date-picker date">
+                                        <input
+                                            class="form-control mdc-text-field__input"
+                                            type="text"
+                                         
+                                            id=""
+                                        />
+                                        <div class="input-group-addon">
+                                            <button class="mdc-icon-button mdc-ripple-upgraded--unbounded mdc-ripple-upgraded mdc-icon-button--on" aria-pressed="true" aria-label="Select a Date"><i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">event</i><i class="material-icons mdc-icon-button__icon mdc-date">date_border</i></button>
+                                        </div>
+                                        <div class="mdc-notched-outline mdc-notched-outline--upgraded">
+                                            <div class="mdc-notched-outline__leading"></div>
+                                            <div class="mdc-notched-outline__notch">
+                                                <label for="text-field-hero-input" class="mdc-floating-label">
+                                                    Date Label
+                                                </label>
+                                            </div>
+                                            <div class="mdc-notched-outline__trailing"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion -->
+                <div class="row">
+                    <div class="scrollspy-item">
+                        <div class="scrollspy-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5>Accordion</h5>
+                                    <div class="jumbotron">
+                                        <div class="card mt-3 code-snippet">
+                                            <div class="card-header br-cyan-overlap text-white mdc-surface-ripple">
+                                                <h5 class="card-title mb-0 text-light">Sample Accordion
+                                                <a class="float-right not-collapsed collapsed" href="#collapseCard" data-toggle="collapse"
+                                                aria-expanded="true" aria-controls="collapseCard">
+                                                <span class="sr-only">Open or Close Panel</span>
+                                                <span class="pt-1 nc-icon-glyph arrows-1_small-triangle-up text-light"
+                                                    aria-hidden="true"></span>
+                                                </a>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse" id="collapseCard">
+                                                <div class="card-body">
+                                                    <p class="card-text">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cards -->
+                <div class="row">
+                    <div class="scrollspy-item" id="scroll-to-cards">
+                        <div class="scrollspy-content">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="my-3">Card with simple text and buttons</h6>
+                                    <div class="mdc-card demo-card">
+                                        <div class="mdc-card__primary-action">
+                                            <div class="demo-card__primary">
+                                                <h2 class="demo-card__title mdc-typography mdc-typography--headline6">
+                                                    Title goes here</h2>
+                                                <h3 class="demo-card__subtitle mdc-typography mdc-typography--overline">
+                                                    Subtitle here</h3>
+                                            </div>
+                                            <div class="demo-card__secondary mdc-typography mdc-typography--body2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+                                                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                                ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,consectetur adipiscing elit
+                                            </div>
+                                        </div>
+                                        <div class="mdc-card__actions">
+                                            <div class="mdc-card__action-buttons">
+                                                <button class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded" style="--mdc-ripple-fg-size:47px; --mdc-ripple-fg-scale:2.05356; --mdc-ripple-fg-translate-start:13px, -12.5px; --mdc-ripple-fg-translate-end:15.8359px, -5.5px;">Action
+                                                    1</button>
+                                                <button class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded" style="--mdc-ripple-fg-size:47px; --mdc-ripple-fg-scale:2.05356; --mdc-ripple-fg-translate-start:-13.6719px, -15.5px; --mdc-ripple-fg-translate-end:15.8359px, -5.5px;">Action
+                                                    2</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="my-3">Card with simple text, buttons &amp; image</h6>
+                                    <div class="mdc-card demo-card">
+                                        <div class="mdc-card__primary-action">
+                                            <div class="mdc-card__media mdc-card__media--16-9 demo-card__media" style="background-image: url(&quot;https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Fplaceholder-landscape-short.png?1553629848209&quot;);">
+                                            </div>
+                                            <div class="demo-card__primary">
+                                                <h2 class="demo-card__title mdc-typography mdc-typography--headline6">
+                                                    Title goes here</h2>
+                                                <h3 class="demo-card__subtitle mdc-typography mdc-typography--overline">
+                                                    Subtitle here</h3>
+                                            </div>
+                                            <div class="demo-card__secondary mdc-typography mdc-typography--body2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </div>
+                                        </div>
+                                        <div class="mdc-card__actions">
+                                            <div class="mdc-card__action-buttons">
+                                                <button class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded" style="--mdc-ripple-fg-size:47px; --mdc-ripple-fg-scale:2.05356; --mdc-ripple-fg-translate-start:-21.3281px, 1.89063px; --mdc-ripple-fg-translate-end:15.8359px, -5.5px;">Action
+                                                    1</button>
+                                                <button class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded" style="--mdc-ripple-fg-size:47px; --mdc-ripple-fg-scale:2.05356; --mdc-ripple-fg-translate-start:30px, -3.10938px; --mdc-ripple-fg-translate-end:15.8359px, -5.5px;">Action
+                                                    2</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="my-3">Card with simple text, buttons, Avatar &amp; Image</h6>
+                                    <div class="mdc-card demo-card">
+                                        <div class="mdc-card__primary-action">
+                                            <div class="demo-card__primary d-flex">
+                                                <div class="mdc-card-avatar"><img src="images/BR_Abstract_Digital_May2019_121.jpg" alt="">
+                                                </div>
+                                                <div class="mdc-card-title">
+                                                    <h2 class="demo-card__title mdc-typography mdc-typography--headline6">
+                                                        Headline 6</h2>
+                                                    <h3 class="demo-card__subtitle mdc-typography mdc-typography--overline">
+                                                        Overline</h3>
+                                                </div>
+                                            </div>
+                                            <div class="mdc-card__media mdc-card__media--16-9 demo-card__media mb-3" style="background-image: url(&quot;https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Fplaceholder-landscape-short.png?1553629848209&quot;);">
+                                            </div>
+                                            <div class="demo-card__secondary mdc-typography mdc-typography--body2">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </div>
+                                        </div>
+                                        <div class="mdc-card__actions">
+                                            <div class="mdc-card__action-buttons">
+                                                <button class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded" style="--mdc-ripple-fg-size:47px; --mdc-ripple-fg-scale:2.05356; --mdc-ripple-fg-translate-start:23.3438px, -1.10938px; --mdc-ripple-fg-translate-end:15.8359px, -5.5px;">Action
+                                                    1</button>
+                                                <button class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded" style="--mdc-ripple-fg-size:47px; --mdc-ripple-fg-scale:2.05356; --mdc-ripple-fg-translate-start:32.6719px, -3.10938px; --mdc-ripple-fg-translate-end:15.8359px, -5.5px;">Action
+                                                    2</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Datatables -->
+                <div class="row">
+                    <div class="scrollspy-item">
+                        <div class="scrollspy-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5>Datatables</h5>
+                                    <div class="table-responsive">
+                                        <div id="base_datatable"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lists -->
+                <div class="row">
+                    <div class="scrollspy-item">
+                        <div class="scrollspy-content">    
+                            <!-- Primary Buttons -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5>Lists</h5>
+                                    <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list">
+                                        <li class="mdc-list-item mdc-ripple-upgraded" tabindex="0">
+                                            <span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span>
+                                            <span class="mdc-list-item__text">
+                                                <span class="mdc-list-item__primary-text">Photos</span>
+                                                <span class="mdc-list-item__secondary-text">9 Jan 2020</span>
+                                            </span>
+                                            <a href="#" class="mdc-list-item__meta material-icons" aria-label="View more information" title="More info" onclick="event.preventDefault();">info</a>
+                                        </li>
+                                        <li class="mdc-list-item mdc-ripple-upgraded" tabindex="0">
+                                            <span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span>
+                                            <span class="mdc-list-item__text">
+                                                <span class="mdc-list-item__primary-text">Recipes</span>
+                                                <span class="mdc-list-item__secondary-text">11 Jan 2020</span>
+                                            </span>
+                                            <a href="#" class="mdc-list-item__meta material-icons" aria-label="View more information" title="More info" onclick="event.preventDefault();">info</a>
+                                        </li>
+                                        <li class="mdc-list-item mdc-ripple-upgraded" tabindex="0">
+                                            <span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span>
+                                            <span class="mdc-list-item__text">
+                                                <span class="mdc-list-item__primary-text">Work</span>
+                                                <span class="mdc-list-item__secondary-text">15 Jan 2020</span>
+                                            </span>
+                                            <a href="#" class="mdc-list-item__meta material-icons" aria-label="View more information" title="More info" onclick="event.preventDefault();">info</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alerts -->
+                <div class="row">
+                    <div class="scrollspy-item">
+                        <div class="scrollspy-content">
+                            <div class="row" id="section-alerts">
+                                <div class="col-12">
+                                    <div class="alert alert-success">
+                                      <strong>Success!</strong>
+                                    </div>
+                                      
+                                    <div class="alert alert-info">
+                                      <strong>Info!</strong>
+                                    </div>
+                                      
+                                    <div class="alert alert-warning">
+                                      <strong>Warning!</strong>
+                                    </div>
+                                      
+                                    <div class="alert alert-danger">
+                                      <strong>Danger!</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Container end -->
+
+            <!--Footer start-->
+            <footer role="contentinfo">
+                <div class="container-fluid">
+                    <div class="container no_padding">
+                        <div class="footerLinks">
+                            <h1 class="footer_title">Broadridge Financial Solutions</h1>
+                            <ul class="linksFooter" role="navigation">
+                                <li>
+                                    <a href="#">
+                                        Help
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        FAQs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Terms and Conditions
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="copyRight">&copy; 2020 Broadridge Financial Solutions, Inc. All Rights Reserved.</div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </footer>
+            <!--FooterEnds-->
+        </main>
+    </div>
+
+    <!-- import the Material javascript file -->
+    <script src="js/bundle.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+
+    <!-- for datatable -->
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/sampleDatatable.js"></script>
+
+    <!-- for date picker -->
+    <script src="js/bootstrap-datepicker.min.js"></script>
+
+    <!-- multi dropdown -->
+    <script src="js/fSelect.js"></script>
+
+    <script type="text/javascript">
+        $('.dropdown-menu').click(function(e) {
+            e.stopPropagation();
+        });
+
+        $('[data-toggle=tooltip]').tooltip();
+
+        $('.mdc-date-picker').datepicker({
+            format: 'mm/dd/yyyy', keyboardNavigation: true
+        });
+    </script>
+
+</body>
+
+</html>

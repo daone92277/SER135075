@@ -1,0 +1,9 @@
+To use this template please follow these steps.
+
+1. Unpack the template into your project folder.
+2. Install npm packages:
+	cd your-project
+	npm install
+3. Run your app:
+	npm start
+
